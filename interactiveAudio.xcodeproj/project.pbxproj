@@ -49,6 +49,7 @@
 		C4667CFB2B972B4600825CBC /* interactiveAudioUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = interactiveAudioUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C4667D082B972B8F00825CBC /* AudioProcessing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioProcessing.swift; sourceTree = "<group>"; };
 		C4667D0A2B972BB000825CBC /* 01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 01.mp3; path = ../../01.mp3; sourceTree = "<group>"; };
+		C4667D0C2B972D7800825CBC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +80,7 @@
 		C4667CD12B972B4400825CBC = {
 			isa = PBXGroup;
 			children = (
+				C4667D0C2B972D7800825CBC /* README.md */,
 				C4667CDC2B972B4400825CBC /* interactiveAudio */,
 				C4667CEE2B972B4600825CBC /* interactiveAudioTests */,
 				C4667CF82B972B4600825CBC /* interactiveAudioUITests */,
