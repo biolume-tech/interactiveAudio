@@ -15,7 +15,7 @@
 		C4667CFA2B972B4600825CBC /* interactiveAudioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4667CF92B972B4600825CBC /* interactiveAudioUITests.swift */; };
 		C4667CFC2B972B4600825CBC /* interactiveAudioUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4667CFB2B972B4600825CBC /* interactiveAudioUITestsLaunchTests.swift */; };
 		C4667D092B972B8F00825CBC /* AudioProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4667D082B972B8F00825CBC /* AudioProcessing.swift */; };
-		C4667D0B2B972BB000825CBC /* 01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C4667D0A2B972BB000825CBC /* 01.mp3 */; };
+		C4AAB0B72B97B7F900E1C4E1 /* 01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C4AAB0B62B97B7F900E1C4E1 /* 01.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,8 +48,8 @@
 		C4667CF92B972B4600825CBC /* interactiveAudioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = interactiveAudioUITests.swift; sourceTree = "<group>"; };
 		C4667CFB2B972B4600825CBC /* interactiveAudioUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = interactiveAudioUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C4667D082B972B8F00825CBC /* AudioProcessing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioProcessing.swift; sourceTree = "<group>"; };
-		C4667D0A2B972BB000825CBC /* 01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 01.mp3; path = ../../01.mp3; sourceTree = "<group>"; };
 		C4667D0C2B972D7800825CBC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C4AAB0B62B97B7F900E1C4E1 /* 01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 01.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +101,7 @@
 		C4667CDC2B972B4400825CBC /* interactiveAudio */ = {
 			isa = PBXGroup;
 			children = (
-				C4667D0A2B972BB000825CBC /* 01.mp3 */,
+				C4AAB0B62B97B7F900E1C4E1 /* 01.mp3 */,
 				C4667CDD2B972B4400825CBC /* interactiveAudioApp.swift */,
 				C4667CDF2B972B4400825CBC /* ContentView.swift */,
 				C4667CE12B972B4600825CBC /* Assets.xcassets */,
@@ -201,7 +201,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
-				LastUpgradeCheck = 1520;
+				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					C4667CD92B972B4400825CBC = {
 						CreatedOnToolsVersion = 15.2;
@@ -241,7 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4667D0B2B972BB000825CBC /* 01.mp3 in Resources */,
+				C4AAB0B72B97B7F900E1C4E1 /* 01.mp3 in Resources */,
 				C4667CE62B972B4600825CBC /* Preview Assets.xcassets in Resources */,
 				C4667CE22B972B4600825CBC /* Assets.xcassets in Resources */,
 			);
@@ -341,6 +341,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -402,6 +403,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -429,6 +431,7 @@
 				CODE_SIGN_ENTITLEMENTS = interactiveAudio/interactiveAudio.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"interactiveAudio/Preview Content\"";
 				DEVELOPMENT_TEAM = NVFG43T73V;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -467,6 +470,7 @@
 				CODE_SIGN_ENTITLEMENTS = interactiveAudio/interactiveAudio.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"interactiveAudio/Preview Content\"";
 				DEVELOPMENT_TEAM = NVFG43T73V;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -504,6 +508,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = NVFG43T73V;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
@@ -527,6 +532,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = NVFG43T73V;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
@@ -549,6 +555,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = NVFG43T73V;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
@@ -571,6 +578,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = NVFG43T73V;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;

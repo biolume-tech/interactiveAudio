@@ -73,8 +73,8 @@ class AudioEngineProcessor: ObservableObject {
     private func setupLowBandPassFilter() {
         guard let bandPass = lowBandPassFilter.bands.first else { return }
         bandPass.filterType = .bandPass // Set filter type to bandpass to isolate a specific frequency band.
-        bandPass.frequency = 20 // Target frequency for the low band, isolating lower frequencies.
-        bandPass.bandwidth = 1 // Bandwidth around the target frequency, defining the range of frequencies affected.
+        bandPass.frequency = 40 // Target frequency for the low band, isolating lower frequencies.
+        bandPass.bandwidth = 20 // Bandwidth around the target frequency, defining the range of frequencies affected.
         bandPass.bypass = false // Ensure the filter is active and not bypassed.
     }
     
@@ -124,7 +124,7 @@ class AudioEngineProcessor: ObservableObject {
         let format = outputNode.outputFormat(forBus: 0) // Define the audio format for the tap based on the output node's current configuration.
         
         // Install the tap with a specific buffer size and format. The closure captures audio frames for analysis.
-        outputNode.installTap(onBus: 0, bufferSize: 256, format: format) { (buffer, when) in
+        outputNode.installTap(onBus: 0, bufferSize: 1024, format: format) { (buffer, when) in
             let lowBand = self.calculateAmplitude(buffer: buffer) // Calculate amplitude for low band (reusing method incorrectly, should differentiate low/high).
             let highBand = self.calculateAmplitude(buffer: buffer) // Calculate amplitude for high band (needs differentiation).
             let mappedLowAmplitude = self.mapAmplitude(amplitude: lowBand) // Map amplitude to a usable range for low band.
